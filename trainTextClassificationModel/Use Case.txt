@@ -1,0 +1,37 @@
+Text Classification is the process categorizing texts into different groups.
+ SpaCy makes custom text classification structured and convenient through
+ the textcat component.
+
+
+
+# Introduction
+
+# Let’s looks at a typical use case for Text Classification.
+
+I’m sure each of us would have filled in a feedback after buying za book from amazon or ordering food from Swiggy.
+These reviews help them to analyze the problems and improve the service. But let’s take a peek into this process. 
+There are millions of reviews filled out by customers, is it possible to manually go through each of them and see 
+if it’s an appreciation or a negative review?
+
+Of course, No! The first step would be to classify all the reviews into positive and negative categories.
+Then, you can easily analyze how many people were not satisfied and why. 
+This process of categorizing texts into different groups/labels is called Text Classification.
+
+Text Classification can be performed in different ways. Here, we’ll use the spaCy package to classify texts.
+spaCy is has become a very popular library for NLP and provides state-of-the-art components. For practical cases,
+it is mostly preferred to use a trained Custom model for classification. Let me first introduce to you what is a
+custom model and why we need it in the next section.
+
+
+
+What is a custom Text Classifier model?
+
+Let’s say you have a bunch of movie reviews/customer reviews. You wish to classify each review as positive or negative.
+If you use the default categorizer of spaCy, the result is not likely to be great. Instead, what if you collect labeled
+data set of movie/customer reviews and train your model on that?
+
+The results will be far better and accurate! You can do this by training a custom text classifier. You first train it on
+ relevant labeled datasets and made ready for our use in similar context. It’s very helpful especially in cases where
+ the amount of data is huge.
+
+In the next sections, I’ll guide you step-by-step on how to train your text classification model in spaCy.
